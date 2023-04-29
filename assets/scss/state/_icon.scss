@@ -1,0 +1,175 @@
+.icon {
+    content: "";
+    width: 1rem;
+    height: 1.25rem;
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__user{
+        @extend .icon;
+        background-image: url(../images/ic-user.png);
+    }
+    &__bag{
+        @extend .icon;
+        background-image: url(../images/ic-bag.png);
+    }
+    &__search{
+        @extend .icon;
+        background-image: url(../images/ic-search.png);
+    }
+    &__search-style-2{
+        @extend .icon;
+        width: 1rem;
+        height: calc(1rem + 1px);
+        background-image: url(../images/ic-search2.png);
+    }
+    &__menu{
+        @extend .icon;
+        background-image: url(../images/ic-menu.png);
+    }
+    &__email{
+        @extend .icon;
+        background-image: url(../images/ic-email.png);
+    }
+    &__fb{
+        @extend .icon;
+        width: 0.625rem;
+        height: 1.125rem;
+        background-image: url(../images/ic-fb.png);
+    }
+    &__twitter{
+        @extend .icon;
+        width: 1.1875rem;
+        height: 1rem;
+        background-image: url(../images/ic-tw.png);
+    }
+    &__instagram{
+        @extend .icon;
+        width: 1.125rem;
+        height: 1.125rem;
+        background-image: url(../images/ic-instagram.png);
+    }
+    &__pinterest{
+        @extend .icon;
+        width: 0.875rem;
+        height: 1.125rem;
+        background-image: url(../images/ic-p.png);
+    }
+    &__qq{
+        @extend .icon;
+        width: 1.1875rem;
+        height: 1.125rem;
+        background-image: url(../images/ic-squid.png);
+    }
+    &__visa{
+        @extend .icon;
+        width: 2rem;
+        height: 1.5rem;
+        background-image: url(../images/ic-cc-visa-brands.png);
+    }
+    &__mastercard{
+        @extend .icon;
+        width: 2rem;
+        height: 1.5rem;
+        background-image: url(../images/ic-cc-mastercard-brands.png);
+    }
+    &__amex{
+        @extend .icon;
+        width: 2rem;
+        height: 1.5rem;
+        background-image: url(../images/ic-cc-amex-brands.png);
+    }
+    &__discover{
+        @extend .icon;
+        width: 2rem;
+        height: 1.5rem;
+        background-image: url(../images/ic-cc-discover-brands.png);
+    }
+    &__paypal{
+        @extend .icon;
+        width: 2rem;
+        height: 1.5rem;
+        background-image: url(../images/ic-cc-paypal-brands.png);
+    }
+    &__diners-club{
+        @extend .icon;
+        width: 2rem;
+        height: 1.5rem;
+        background-image: url(../images/ic-cc-diners-club-brands.png);
+    }
+    &__fast{
+        @extend .icon;
+        width: 1.625rem;
+        height: 1rem;
+        background-image: url(../images/ic-fast.png);
+    }
+    &__return{
+        @extend .icon;
+        width: 1.25rem;
+        height: 1.0625rem;
+        background-image: url(../images/ic-return.png);
+    }
+    &__support{
+        @extend .icon;
+        width: 1.1875rem;
+        height: 1.25rem;
+        background-image: url(../images/ic-support.png);
+    }
+    &__gift{
+        @extend .icon;
+        width: 1rem;
+        height: 1.125rem;
+        background-image: url(../images/ic-gift.png);
+    }
+    &__show{
+        @extend .icon;
+        width: 1.25rem;
+        height: 0.75rem;
+        background-image: url(../images/ic-show.png);
+    }
+    &__close{
+        @extend .icon;
+        width: 1rem;
+        height: 1rem;
+        background-image: url(../images/ic-close2.png);
+    }
+    &__lang{
+        &-en{
+            @extend .icon;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../images/lang-en.png);
+        }
+        &-us{
+            @extend .icon;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../images/lang-us.png);
+        }
+        &-fe{
+            @extend .icon;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../images/lang-fe.png);
+        }
+        &-eu{
+            @extend .icon;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../images/lang-eu.png);
+        }
+        &-sp{
+            @extend .icon;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../images/lang-sp.png);
+        }
+        &-gb{
+            @extend .icon;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../images/lang-gb.png);
+        }
+    }
+}

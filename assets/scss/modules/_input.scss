@@ -1,0 +1,130 @@
+$space-input: 1rem;// + 1px
+$height-input: 3.125rem;
+.input__group {
+    display: flex;
+    position: relative;
+    &.-icon.-append{
+        position: absolute;
+        left: $space-input;
+        top: $space-input;
+        &::after {
+            content: "";
+            width: 1.25rem;
+            height: 1rem;
+            display: block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../images/ic-email.png);
+        }
+    }
+    &.-button.-append{
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        height: $height-input;
+        cursor: pointer;
+        &::after{
+            content: "";
+            width: 1.1875rem;
+            height: 0.625rem;
+            display: block;
+            margin-right: 1rem;
+            margin-left: 0.6875rem;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../images/ic-right-arrow-long.png);
+        }
+    }
+}
+.input__item {
+    border-radius: 0;
+    font-family: $font-primary;
+    background-color: transparent;
+    color: $color-primary;
+    padding: $space-input;
+    padding-left: 3.1875rem;
+    font-size: 1rem;
+    height: 3.125rem;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+    }
+    &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: $color-primary;
+        font-size: 1rem;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color-primary;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color-primary;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $color-primary;
+    }
+    &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: $color-primary;
+    }
+    &::placeholder {
+        /* Most modern browsers support this now. */
+        color: $color-primary;
+    }
+}
+$radio-size : 1.25rem;
+.radio__group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__input{
+        display: none;
+        &:checked ~ label:after,&.checked ~ label:after {
+            content: "";
+            display: block;
+            width: .625rem;
+            height: .625rem;
+            background-color: #fff;
+            // position: absolute;
+            border-radius: 50%;
+            // left: calc(($radio-size - 0.625rem) / 2);
+            // top: calc(($radio-size - 0.625rem) / 2);
+            transition: all .2s linear;
+        }
+    }
+    &__label{
+        width: $radio-size;
+        height: $radio-size;
+        border-radius: 50%;
+        position: relative;
+        @include flex-center();
+        &.-brown{
+            background-color: $color-product-brown;
+        }
+        &.-brown-light{
+            background-color: $color-product-brown-light;
+        }
+        &.-blue{
+            background-color: $color-product-blue-dark;
+        }
+        &.-gray{
+            background-color: $color-product-gray;
+        }
+        &.-green{
+            background-color: $color-product-green-dark;
+        }
+    }
+}

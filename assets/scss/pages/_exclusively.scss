@@ -1,0 +1,31 @@
+.exclusively__block{
+    background-color: $color-warning-2;
+    @include mobile-and-tablet {
+        margin-top: 2.4375rem;
+    }
+    .exclusively__container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .exclusively__content{
+            width: 70%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3.75rem;
+            @include mobile-and-tablet {
+                .exclusively__block{
+                    display: none;
+                }
+            }
+        }
+        .exclusively__img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+@import "./base/all";
+@import "./layout/all";
+@import "./state/all";
+@import "./modules/all";
+@import "./pages/all";
+:root {
+    font-size: 16px;
+}
+body {
+    font-family: $font-primary;
+}
+.content__block {
+    overflow: hidden;
+}
+@media screen and (max-width: 1400px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 8px;
+    }
+}
+// * {
+//     box-sizing: border-box;
+//     outline: 1px solid #000;
+// }

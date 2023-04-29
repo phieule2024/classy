@@ -1,0 +1,66 @@
+.discout__block {
+    .discount__container {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            [class^="col"] {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .banner__block {
+        display: block;
+        position: relative;
+        height: 100%;
+        .banner__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .countdown__block {
+        background-color: $color-warning-2;
+        // padding: 4rem 7.3125rem 3.8125rem 7.3125rem;
+        height: 100%;
+        @include mobile-and-tablet {
+            padding: 3rem;
+        }
+        @include flex-center(column);
+        .countdown__content {
+            display: flex;
+            gap: 1.375rem;
+            .countdown__item {
+                width: 5.875rem;
+                height: 6.5rem;
+                border: 1px solid $color-warning;
+                padding: 1rem;
+                @include flex-center(column);
+                position: relative;
+                &:not(:last-child):after {
+                    content: ":";
+                    display: block;
+                    position: absolute;
+                    font-family: Jost;
+                    font-size: 1.875rem;
+                    font-weight: 500;
+                    color: #cb9274;
+                    right: calc(-1rem - 1px);
+                }
+            }
+        }
+    }
+    .gray-light__bg {
+        background-color: $color-product-gray-light;
+        .ads__block {
+            padding: 2rem 0 2rem 3.25rem;
+            @include mobile-and-tablet {
+                padding: 2rem 0 2rem 1.25rem;
+            }
+            .text__subtitle {
+                @include flex-center();
+                gap: 0.75rem;
+            }
+        }
+    }
+}

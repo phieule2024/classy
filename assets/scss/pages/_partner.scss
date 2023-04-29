@@ -1,0 +1,64 @@
+.partner__block {
+    background-color: $color-product-gray-light;
+    .partner__container {
+        padding-top: 4.9375rem;
+        padding-bottom: 4.9375rem;
+        @include flex-center(column);
+        .partner__list{
+            width: 100%;
+            @include slick-arrow(0,0, calc((50% + 3.125rem) / 2));
+            .slick-arrow{
+                width: 3.125rem;
+                height: 3.125rem;
+                background-color: #fff;
+                &.slick-prev{
+                    left: auto;
+                    right: calc(75vw - 4.6875rem - 3.125rem / 2);
+                    &::before{
+                        position: absolute;
+                        left: calc((3.125rem - 0.875rem) / 2);
+                        top: calc((3.125rem - 1.5625rem) / 2);
+                        
+                    }
+                }
+                &.slick-next{
+                    right: auto;
+                    left: calc(75vw - 4.6875rem - 3.125rem / 2);
+                    &::before{
+                        position: absolute;
+                        right: calc((3.125rem - 0.875rem) / 2);
+                        top: calc((3.125rem - 1.5625rem) / 2);
+                    }
+                }
+            }
+            .partner__item{
+                display: flex;
+                justify-content: center;
+                .partner__box {
+                    width: 100%;
+                    max-width: 60%;
+                    text-align: center;
+                    .star__block {
+                        text-align: center;
+                        font-size: 0.5625rem;
+                        color: #000;
+                        letter-spacing: -2px;
+                        margin-top: 0.3rem;
+                        color: $color-yellow;
+                        @include mobile-and-tablet {
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .partner__icon{
+                        @include flex-center();
+                        gap: 1.625rem;
+                        span{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

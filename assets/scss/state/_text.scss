@@ -1,0 +1,165 @@
+.title {
+    &__headline {
+        color: $color-primary;
+        font-family: $font-secondary;
+        font-size: 2.8125rem;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 4.6875rem;
+        text-align: center;
+    }
+    &__intro {
+        color: $color-primary-2;
+        font-size: 1rem;
+        font-weight: 1rem;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+}
+
+.text {
+    &__headline {
+        font-weight: 400;
+        text-align: center;
+        color: $color-dark;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 3.75rem;
+        font-family: "Cormorant Garamond - Regular";
+        &.-bold-500 {
+            font-weight: 500;
+        }
+        &.-bold-600 {
+            font-weight: 600;
+        }
+        &.-bold-700 {
+            font-weight: 600;
+        }
+        &.-bold {
+            font-weight: 600;
+        }
+        &.-left {
+            text-align: left;
+        }
+        &.-mb-34 {
+            margin-bottom: 2.125rem;
+        }
+        &.-size-11 {
+            font-size: 0.6875rem;
+        }
+        &.-size-16 {
+            font-size: 1rem;
+        }
+        &.-size-18 {
+            font-size: 1.125rem;
+        }
+        &.-size-20 {
+            font-size: 1.25rem;
+        }
+        &.-size-24 {
+            font-size: 1.5rem;
+        }
+        &.-size-40 {
+            font-size: 2.5rem;
+        }
+        &.-size-50 {
+            font-size: 3.125rem;
+            font-family: "Cormorant Garamond";
+        }
+        &.-style-italic {
+            font-style: italic;
+            font-family: "Cormorant Garamond - Bold Italic";
+        }
+        &.-family-semi {
+            font-weight: 600;
+            font-family: "Cormorant Garamond - Semi Bold";
+        }
+        &.-family-garamond {
+            font-family: "Cormorant Garamond";
+        }
+        &.-family-jost {
+            font-family: Jost;
+        }
+        &.-line-height-0 {
+            line-height: 0;
+        }
+        &.-line-height-16 {
+            line-height: 1rem;
+        }
+        &.-line-height-24 {
+            line-height: 1.5rem;
+        }
+        &.-line-height-36 {
+            line-height: 2.25rem;
+        }
+        &.-light {
+            color: $color-primary;
+        }
+        &.-dark {
+            color: $color-black;
+        }
+    }
+    &__intro {
+        color: $color-dark;
+        font-size: 1rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    &__subtitle {
+        color: #969696;
+        font-family: Jost;
+        font-size: .75rem;
+        font-weight: 400;
+        &.-bold-300 {
+            font-weight: 300;
+        }
+        &.-bold-400 {
+            font-weight: 400;
+        }
+        &.-bold-500 {
+            font-weight: 500;
+        }
+        &.-bold-700 {
+            font-weight: 700;
+        }
+        &.-size-14 {
+            font-size: 0.875;
+        }
+        &.-size-16 {
+            font-size: 1rem;
+        }
+        &.-size-18 {
+            font-size: 1.125rem;
+        }
+        &.-light {
+            color: $color-primary;
+        }
+        &.-dark {
+            color: $color-black;
+        }
+        &.-dark-light {
+            color: $color-dark;
+        }
+        &.-gray-light {
+            color: $color-gray;
+        }
+        &.-gray {
+            color: $color-product-gray-dark;
+        }
+        &.-uppercase{
+            text-transform: uppercase;
+        }
+        &.-text-right{
+            text-align: right;
+        }
+        &.-line-height-30 {
+            line-height: 1.875rem;
+        }
+    }
+}

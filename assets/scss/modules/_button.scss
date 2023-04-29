@@ -1,0 +1,49 @@
+.button__block {
+    width: 13.75rem;
+    height: 3.125rem;
+    background-color: $color-primary;
+    color: $color-warning;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    transition: all .5s ease;
+    cursor: pointer;
+    max-width: 100%;
+    @include flex-center();
+    &:hover{
+        background-color: $color-warning;
+        color: $color-primary;
+    }
+    &.-style-2{
+        background-color: $color-warning;
+        color: $color-primary;
+        &.-border{
+            border: 1px solid $color-warning;
+        }
+        &:hover{
+            background-color: $color-primary;
+            color: $color-warning;
+            &.-border{
+                border: 1px solid $color-dark;
+                color: $color-dark;
+            }
+        }
+    }
+    &.-style-3{
+        background-color: $color-primary;
+        color: $color-dark;
+        border: 1px solid $color-dark;
+        &:hover{
+            background-color: $color-warning;
+            border: 1px solid $color-warning;
+            color: $color-primary;
+        }
+    }
+    &.-uppercase{
+        text-transform: uppercase;
+    }
+    &.-family-semi-bold{
+        font-family: "Jost - Semi Bold";
+        font-weight: 500;
+    }
+}

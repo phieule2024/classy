@@ -1,0 +1,39 @@
+#languageModal{
+    right: -50vw;
+    left: auto;
+    top: 0;
+    height: auto;
+    transition: all .5s ease;
+    &.show{
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    .modal-content{
+        border: 0;
+        .modal-body{
+            padding: 0;
+        }
+    }
+    .language-modal__block{
+        background-color: $color-primary;
+        padding: 1.1875rem 1.25rem;
+        margin: 5.625rem 7.75rem auto auto;
+        .row>.col-md-6:nth-child(odd){
+            border-right: 1px solid $color-black2;
+        }
+        .lang-icon__block{
+            @include flex-l();
+            cursor: pointer;
+            padding-bottom: 0.5625rem;
+            span[class^="icon__"]{
+                margin-right: 5px;
+            }
+            .text__headline:hover{
+                text-decoration: underline;
+                color: $color-black;
+            }
+        }
+    }
+    
+}
